@@ -8,17 +8,8 @@ global.dir_root = __dirname;
 
 
 var srv = socks.createServer(function(info, accept, deny) {
-    // info.dstPort = 80;
-    // info.dstHost = '176.58.127.229';
-    accept();
-    // accept();
-    // var socket = accept();
-    // if (socket = accept(true)) {
-    //     console.log('socket',socket);
-    //  console.log('info',info);
-    // } else accept();
-});
-srv.listen(8499, '212.111.41.130', function() {
+    accept();});
+srv.listen(8499, '', function() {
     console.log('SOCKS server listening on port 8499');
 });
 
